@@ -14,6 +14,7 @@
 
 - [Blocking](../part-guide/more-async-await.md#blocking-and-cancellation)
   - [IO](../part-guide/more-async-await.md#blocking-io)
+  - [CPU-intensive tasks](../part-guide/io.md#other-blocking-operations)
 
 
 
@@ -23,6 +24,7 @@
 - [Concurrency](../part-guide/concurrency.md)
   - [c.f., parallelism](../part-guide/concurrency.md#concurrency-and-parallelism)
   - [Primitives (`join`, `select`, etc.)](../part-guide/concurrency-primitives.md)
+- [Cooperative scheduling](../part-guide/io.md#yielding)
 
 
 
@@ -35,7 +37,7 @@
 
 
 
-- IO
+- [IO](../part-guide/io.md)
   - [Blocking](../part-guide/more-async-await.md#blocking-io)
 
 
@@ -47,8 +49,9 @@
 
 
 
+- [Multiple runtimes](../part-guide/io.md#other-blocking-operations)
 - Multitasking
-  - [Cooperative](../part-guide/concurrency.md#async-programming)
+  - [Cooperative](../part-guide/concurrency.md#async-programming), [yielding](../part-guide/io.md#yielding)
   - [Pre-emptive](../part-guide/concurrency.md#processes-and-threads)
 
 
@@ -79,8 +82,17 @@
 - Traits
   - [async](../part-guide/more-async-await.md#async-traits)
   - `Future`
-[`try_join`](../part-guide/concurrency-primitives.md#join)
+- [`try_join`](../part-guide/concurrency-primitives.md#join)
 
 
 
 - [`Unpin`](../part-reference/pinning.md)
+
+
+
+- [Waiting](../part-guide/io.md#other-blocking-operations)
+
+
+
+- [Yielding](../part-guide/io.md#yielding)
+- [`yield_now`](../part-guide/io.md#yielding)
